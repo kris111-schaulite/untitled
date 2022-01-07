@@ -55,7 +55,7 @@ public class ReqresTest {
                 .extract().as(RegistrationUser.class);
         Assertions.assertEquals(error, registrationUser.getError());
     }
-    
+
 
     @Test
     @Epic("AnotherStatus")
@@ -87,7 +87,6 @@ public class ReqresTest {
         Assertions.assertNotNull(updateUserData.getUpdatedAt());
         Assertions.assertEquals("morpheus",updateUserData.getName());
         Assertions.assertEquals("zion resident",updateUserData.getJob());
-
     }
 
 }
