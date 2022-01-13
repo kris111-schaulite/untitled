@@ -53,7 +53,7 @@ public class ReqresTest {
                 .then().log().all()
                 .statusCode(400)
                 .extract().as(RegistrationUser.class);
-        Assertions.assertEquals(error, registrationUser.getError());
+        Assertions.assertEquals("Missing password", registrationUser.getError());
     }
 
 
